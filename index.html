@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+               
+                <nav>
+                
+                    <h1 style="font-size: 50px; font-family: Arial, sans-serif; color: blue;">
+                        Ram Karthick P
+                    </h1>
+                    
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>     
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>                             
+                 </nav>
+                 
+                 <div class="header-text">
+                     <h1>Full Stack Developer</h1>
+                     <p>Hi, I'm Ram Karthick  From India</p>
+                     <a href="#services">Learn More</a>
+                     </div>
+                 
+            </div>
+
+        </div>
+        <!--------------------about------------------->
+        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1"><img src="images/about.jpg"></div>
+                    <div class ="about-col-2">
+                        <h1 class="sub-title"> About Me</h1>
+                        <p> I am Ram Karthick from India. I am a Full Stack Developer. I have a passion for web development and love to create websites and web applications. I am a quick learner and always eager to learn new technologies. I have experience in HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Firebase. I am a team player and always ready to work in a team. I am a good communicator and always ready to help others. I am a hard worker and always ready to work hard to achieve my goals. I am a self-motivated person and always ready to take on new challenges. I am a creative person and always ready to think out of the box.
+                    
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                                
+                                <p class="tab-links active-link" onclick="opentab('education')">education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li>
+                                        <h3><span>Frontend</span></h3>
+                                        <p>HTML, CSS, JavaScript, React</p>
+                                    </li><br>
+                                    <li>
+                                        <h3><span>Backend</span></h3>
+                                        <p>Node.js, Express.js, MongoDB, Firebase</p>
+                                    </li><br>
+                                    <li>
+                                        <h3><span>Tools</span></h3>
+                                        <p>Git, GitHub, VS Code</p>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li>
+                                            <h3><span>2021</span></h3>
+                                            <p>B.com from kamarajar university</p>
+                                        </li><br>
+                                        <li>
+                                            <h3><span>2026</span></h3>
+                                            <p>MCA from sns institution</p>
+                                        </li>
+                                        
+                                    </div>
+    
+
+                                
+                        </div>    
+                </div>
+            </div>
+            </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function openttab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+
+</script>
+
+    </body>
+</html>
